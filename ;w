@@ -1,0 +1,28 @@
+@extends('layouts.template')
+@section('content')
+    <br></br>
+    <div class="tile">
+        @if (isset($users))
+            <button class="button" onclick="location.href = '/users/newpromo';">Nieuwe actie</button>
+            <table class="table">
+                <tr>
+                    <th>Naam</th>
+                    <th>Email</th>
+                    <th>Rijbewijs nummer</th>
+                </tr>
+                @foreach ($users as $user)
+                    <tr>
+                        <th style="display:none;"id="userID">{{$user->id}}</th>
+                        <th>{{$user->customer_initial}} {{$user->customer_lastname}}</th>
+                        <th>{{$user->customer_email}}</th>
+                        <th>{{$user->license_number}}</th>
+                        <th>
+                            <button class="button editUser">Edit</button>
+                            <button class="button deleteUser">Delete</button>
+                        </th>
+                    </tr>
+                @endforeach
+            </table>
+        @endif
+    </div>
+@endsection

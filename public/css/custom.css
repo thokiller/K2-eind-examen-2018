@@ -1,0 +1,64 @@
+.max-width {
+    max-width: 100%;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 500px !important;
+}
+
+.nslogo__image{
+     height: 40px;
+ }
+
+.header__content{
+    padding: 0.5rem .875rem 0.5rem;
+}
+
+.header__container{
+    padding: 0.6rem 0.5rem;
+}
+
+.header__container--left{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-right: -.9375rem
+}
+
+.help-block{
+    color: #db0029;
+    margin-top: 8px;
+    border-top: 2px solid #db0029;
+    padding-left: 0;
+    padding-top: 9px;
+    display: block;
+    clear: both
+}
+
+.datePicker__button{
+    top: 2.6rem;
+    right: 1rem;
+}
+
+.button--nsRed{
+    background-color: #db0029;
+    color: white;
+    box-shadow: inset 0 -.125rem 0 #c40000
+}
+
+.button--nsRed:hover{
+    box-shadow: inset 0 -3.125rem 0 #c40000
+}
+
